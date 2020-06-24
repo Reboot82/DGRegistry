@@ -8,7 +8,7 @@
     </tr>
     <tr *ngFor="let course of courses">
       <td>
-        {{course.name}}
+        <a [routerLink]="['/admin/view', course.id]">{{course.name}}</a>
       </td>
       <td>
         {{course.address}}
